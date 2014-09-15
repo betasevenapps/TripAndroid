@@ -6,4 +6,9 @@
     <!--Login-->
     <string name="login_enter_with_facebook">Enter with Facebook</string>
 
+
+    <!--Titulo dos itens de menu-->
+    <string name="item_exemplo">Principal</string>
+    <string name="abc_action_bar_home_description">Menu</string>
+
 </resources>
