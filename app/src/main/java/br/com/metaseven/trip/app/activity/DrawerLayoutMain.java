@@ -17,7 +17,6 @@ import br.com.metaseven.trip.app.R;
 import br.com.metaseven.trip.app.adapter.MenuAdapter;
 import br.com.metaseven.trip.app.adapter.MyMenuItem;
 import br.com.metaseven.trip.app.fragment.MainFragment;
-import br.com.metaseven.trip.app.fragment.OtherFragment;
 
 public class DrawerLayoutMain extends FragmentActivity {
     private android.support.v4.widget.DrawerLayout mDrawerLayout;
@@ -95,9 +94,6 @@ public class DrawerLayoutMain extends FragmentActivity {
         switch (position) {
             case MainFragment.POSITION:
                 fragment = new MainFragment();
-                break;
-            case OtherFragment.POSITION:
-                fragment = new OtherFragment();
                 break;
         }
 

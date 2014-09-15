@@ -7,9 +7,11 @@
     <!--Login-->
     <string name="login_enter_with_facebook">Enter with Facebook</string>
 
-
     <!--Titulo dos itens de menu-->
     <string name="item_exemplo">Principal</string>
     <string name="abc_action_bar_home_description">Menu</string>
+
+    <!--Erro-->
+    <string name="exception_erro_err_internet_disconnected">Não foi possível encontrar conexão com a internet. Tente novamente!</string>
 
 </resources>

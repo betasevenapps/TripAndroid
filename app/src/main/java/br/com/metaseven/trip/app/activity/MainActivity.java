@@ -1,4 +1,4 @@
-package br.com.metaseven.trip.app;
+package br.com.metaseven.trip.app.activity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -17,8 +17,10 @@ import java.io.InputStream;
 import java.util.Arrays;
 import java.util.Random;
 
+import br.com.metaseven.trip.app.R;
 import br.com.metaseven.trip.app.app.App;
 import br.com.metaseven.trip.app.uihelper.MainUiHelper;
+import br.com.metaseven.trip.app.util.NavegacaoUtil;
 import uk.co.senab.actionbarpulltorefresh.library.PullToRefreshAttacher;
 
 
@@ -37,6 +39,9 @@ public class MainActivity extends Activity {
     }
 
     private void init() {
+        if(ParseUser.getCurrentUser() != null){
+            navegar();
+        }
         app = (App) getApplication();
         attacher = PullToRefreshAttacher.get(this);
         uiHelper = new MainUiHelper(getWindow().getDecorView().findViewById(android.R.id.content));
@@ -89,7 +94,8 @@ public class MainActivity extends Activity {
     }
 
     private void navegar() {
-
+        NavegacaoUtil.navegar(MainActivity.this, DrawerLayoutMain.class);
+        finish();
     }
 
     @Override
