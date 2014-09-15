@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Trip</string>
+
+    <!--Login-->
+    <string name="login_enter_with_facebook">Enter with Facebook</string>
+
+</resources>
