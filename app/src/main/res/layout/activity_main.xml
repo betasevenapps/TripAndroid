@@ -2,48 +2,31 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <ImageView
+        android:id="@+id/main_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_margin="15dp"
-        android:layout_marginBottom="40dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
         android:orientation="vertical"
-        android:weightSum="2">
+        android:layout_marginBottom="7dp">
 
-        <LinearLayout
-            android:id="@+id/login_facebook"
-            android:layout_width="match_parent"
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginBottom="7dp"
-            android:background="@color/azul_fb"
-            android:gravity="center"
-            android:onClick="onClickLoginFacebook"
-            android:padding="10dp">
+            android:text="Connect with"
+            android:textColor="@color/branco"/>
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/facebook" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginLeft="7dp"
-                android:gravity="center"
-                android:text="@string/login_enter_with_facebook"
-                android:textColor="@color/branco" />
-
-            <ProgressBar
-                android:id="@+id/login_progress_facebook"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:layout_marginLeft="7dp"
-                android:visibility="gone" />
-        </LinearLayout>
-
+        <ImageView
+            android:id="@+id/main_facebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/facebook" />
     </LinearLayout>
 </RelativeLayout>

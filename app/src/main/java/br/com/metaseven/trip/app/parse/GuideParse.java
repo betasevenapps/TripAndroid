@@ -12,14 +12,17 @@ public class GuideParse extends ParseObject {
     public static final String TITLE = "title";
     public static final String SIGNED = "signed";
     public static final String TAG = "tag";
-
+    public static final String PLACES = "places";
     public String getTitle(){
         return getString(TITLE);
     }
     public int getSigned(){
         return getInt(SIGNED);
     }
-    public ParseRelation<Tag> tags(){
+    public ParseRelation<Tag> getTags(){
         return getRelation(TAG);
+    }
+    public ParseRelation<PlaceParse> getPlaces(){
+        return getRelation(PLACES);
     }
 }

@@ -2,6 +2,7 @@
 <resources>
 
     <string name="app_name">Trip</string>
+    <string name="facebook_app_id">359636440860646</string>
 
     <!--Login-->
     <string name="login_enter_with_facebook">Enter with Facebook</string>
