@@ -12,8 +12,8 @@ public class GuideSignedParse extends ParseObject {
     public static final String USER = "user";
     public static final String GUIDE = "guide";
 
-    public ParseUser getUser(){
-        return getParseUser(USER);
+    public UserParse getUser(){
+        return (UserParse) getParseUser(USER);
     }
     public GuideParse getGuide(){
         return (GuideParse) getParseObject(GUIDE);

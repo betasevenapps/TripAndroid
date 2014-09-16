@@ -14,8 +14,8 @@ public class GuideRatingParse extends ParseObject {
     public static final String RATING = "rating";
     public static final String COMMENT = "comment";
 
-    public ParseUser getUser(){
-        return getParseUser(USER);
+    public UserParse getUser(){
+        return (UserParse) getParseUser(USER);
     }
     public GuideParse getGuide(){
         return (GuideParse) getParseObject(GUIDE);

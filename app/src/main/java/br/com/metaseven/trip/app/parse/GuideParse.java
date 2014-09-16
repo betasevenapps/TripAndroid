@@ -9,10 +9,14 @@ import com.parse.ParseRelation;
  */
 @ParseClassName("Guide")
 public class GuideParse extends ParseObject {
+    public static final String USER = "user";
     public static final String TITLE = "title";
     public static final String SIGNED = "signed";
     public static final String TAG = "tag";
     public static final String PLACES = "places";
+    public UserParse getUser(){
+        return (UserParse) getParseUser(USER);
+    }
     public String getTitle(){
         return getString(TITLE);
     }

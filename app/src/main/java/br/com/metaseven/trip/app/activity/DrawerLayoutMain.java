@@ -96,8 +96,6 @@ public class DrawerLayoutMain extends FragmentActivity {
                 fragment = new MainFragment();
                 break;
         }
-
-//        fragment.setArguments(args);
         FragmentManager fragmentManager = getSupportFragmentManager();
         fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
 
